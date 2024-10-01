@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Page() {
     return (
-        <main style={{ padding: "10px" }}>
+        <main className="bg-amber-100 h-dvh p-2.5">
             <h1>
                 CPRG 306: Web Development 2 - Assignments
             </h1>
@@ -11,6 +11,9 @@ export default function Page() {
                 </li>
                 <li>
                     <Link href='week-3'>week - 3</Link>
+                </li>
+                <li>
+                    <Link href='week-4'>week - 4</Link>
                 </li>
             </ul>
         </main>
