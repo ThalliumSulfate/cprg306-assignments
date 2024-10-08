@@ -34,7 +34,7 @@ export default function NewItem() {
     }
 
     return (
-        <view className='flex justify-between flex-row place-items-center m-4 bg-white w-36 h-10'>
+        <view className='flex justify-between flex-row place-items-center m-4 bg-white w-36 h-10 rounded-lg'>
             <text className='m-2'>{quantity}</text>
             <div className='text-white m-2 space-x-2'>
                 <button className='bg-blue-400 disabled:bg-blue-200 rounded-lg px-4' onClick={decrement} disabled={decDisabled}>-</button>
