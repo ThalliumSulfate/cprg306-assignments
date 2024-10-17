@@ -36,7 +36,7 @@ export default function Page() {
         }
     }
 
-    function handleAddItem(event, item) {
+    function handleAddItem(item) {
         event.preventDefault();
 
         item.id = makeId.toString();
