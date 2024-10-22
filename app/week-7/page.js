@@ -46,36 +46,33 @@ export default function Page() {
     }
 
     return (
-        <body className='bg-amber-100 w-max h-max'>
-            <main className="bg-amber-100 m-2 p-2">
-                <h1 className="text-3xl pl-5 pb-5 pt-3 bg-amber-100">Shopping List</h1>
-                <div className="bg-amber-100 flex flex-row">
-                    <div className="min-h-dvh">
-                        <ItemList items={items}/>
-                    </div>
-                    <div className="flex-1 ml-2">
-                        <div className="flex-1 flex-row">
-                            <text>Sort By:</text>
-                            <button
-                                title='name'
-                                disabled={!nameEnabled}
-                                className='m-2 p-2 bg-blue-500 rounded-lg disabled:bg-blue-200'
-                                onClick={handleSortChange}>Name
-                            </button>
-                            <button
-                                title='category'
-                                disabled={!categoryEnabled}
-                                className='m-2 p-2 bg-blue-500 rounded-lg disabled:bg-blue-200'
-                                onClick={handleSortChange}>Category
-                            </button>
-
-                        </div>
-                        <NewItem onAddItem={handleAddItem}/>
-                    </div>
-
+        <main className="bg-amber-100 p-4">
+            <h1 className="text-3xl pl-5 pb-5 pt-3 bg-amber-100">Shopping List</h1>
+            <div className="bg-amber-100 flex flex-row">
+                <div className="min-h-dvh">
+                    <ItemList items={items}/>
                 </div>
-            </main>
-        </body>
+                <div className="flex-1 ml-2">
+                    <div className="flex-1 flex-row">
+                        <text>Sort By:</text>
+                        <button
+                            title='name'
+                            disabled={!nameEnabled}
+                            className='m-2 p-2 bg-blue-500 rounded-lg disabled:bg-blue-200'
+                            onClick={handleSortChange}>Name
+                        </button>
+                        <button
+                            title='category'
+                            disabled={!categoryEnabled}
+                            className='m-2 p-2 bg-blue-500 rounded-lg disabled:bg-blue-200'
+                            onClick={handleSortChange}>Category
+                        </button>
 
+                    </div>
+                    <NewItem onAddItem={handleAddItem}/>
+                </div>
+
+            </div>
+        </main>
     );
 }
