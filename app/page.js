@@ -31,6 +31,9 @@ export default function Page() {
                     <li>
                         <Link href='week-9'>week - 9</Link>
                     </li>
+                    <li>
+                        <Link href='week-10'>week - 10</Link>
+                    </li>
                 </ul>
             </main>
         </body>
